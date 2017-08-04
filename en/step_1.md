@@ -1,19 +1,41 @@
-## Introduction
+- You can find and replace simple sequences of characters using Python's `re` module.
 
-Add project description here. What will learners be making?
+- A simple pattern would be a single character or sequence of characters, such as `A` or `cat`.
 
-### What you will make
+- First, import the `re` module into your script:
 
-Add something here to showcase here, for example:
+```python
+import re
+```
 
-<div class="scratch-preview">
-  <iframe allowtransparency="true" width="485" height="402" src="https://scratch.mit.edu/projects/embed/160619869/?autostart=false" frameborder="0"></iframe>
-</div>
+- Then create a simple string that you want to experiment with.
 
-Add instructions here. These should explain either how the finished project will work, or explain how to interact with the content above.
+```python
+import re
+title = 'Harry Potter'
+```
 
-### What you will learn
+- Using `re.sub` you can change any character you like. For instance, changing the `r` character's to `i`, would look like this:
 
-This project covers elements from the following strands of the [Raspberry Pi Digital Making Curriculum](http://rpf.io/curriculum):
+```python
+new_title = re.sub('r', 'i', title)
+print(new_title)
+```
 
-+ [Add curriculum strand/level description.](https://www.raspberrypi.org/curriculum/strand/level)
+- This would give us `'Haiiy Pottei'.
+
+- You can also change sequences of characters.
+
+```python
+new_title = re.sub('rr', 'pp', title)
+```
+
+- Printing `new_title` would now give you `'Happy Potter'`.
+
+- You can also stop the substitution after a set number of replacements. So to only replace the first match, you could do this:
+
+```python
+new_title = re.sub('r', 'i', title, 1)
+```
+
+- Which would make the `new_title` `'Hairy Potter'`.
