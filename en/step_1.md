@@ -31,6 +31,11 @@ new_title = re.sub('rr', 'pp', title)
 
 - Printing `new_title` will now give you `'Happy Potter'`.
 
+- Of course, you can also substitute whole words.
+
+```python
+new_title = re.sub('Potter', 'Styles', title)
+
 - You can also stop the substitution after a set number of replacements. So to only replace the first match, you can do this:
 
 ```python
