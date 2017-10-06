@@ -35,6 +35,7 @@ new_title = re.sub('rr', 'pp', title)
 
 ```python
 new_title = re.sub('Potter', 'Styles', title)
+```
 
 - You can also stop the substitution after a set number of replacements. So to only replace the first match, you can do this:
 
