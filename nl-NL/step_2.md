@@ -1,13 +1,13 @@
-## What you will need
+## Wat heb je nodig
 
 ### Hardware
 
-+ List hardware here, or delete section.
++ Lijst hardware hier, of verwijder sectie.
 
 ### Software
 
-+ List software here, or delete section.
++ Lijst software hier, of verwijder sectie.
 
-### Additional Resources
+### Aanvullende bronnen
 
-+ List additional resources, or delete section.
++ Maak een lijst met extra bronnen of verwijder de sectie.
