@@ -1,46 +1,46 @@
-- You can find and replace simple patterns of characters using Python's `re` module.
+- Je kunt eenvoudige patronen van tekst vinden en vervangen met behulp van de `re` module van Python.
 
-- A simple pattern would be a single character or a sequence of characters, such as 'A' or 'cat'.
+- Een eenvoudig patroon zou een enkel karakter of een reeks karakters zijn, zoals 'A' of 'kat'.
 
-- First, import the `re` module in your script:
-
-```python
-import re
-```
-
-- Then create a simple string with which to experiment.
+- Importeer eerst de `re` module in je script:
 
 ```python
 import re
-title = 'Harry Potter'
 ```
 
-- Using `re.sub` you can change any character in the string. For instance, changing the `r` characters to `i` looks like this:
+- Maak vervolgens een eenvoudige string waarmee je kunt experimenteren.
 
 ```python
-new_title = re.sub('r', 'i', title)
-print(new_title)
+import re
+titel = 'Harry Potter'
 ```
-- This will give us `'Haiiy Pottei'`.
 
-- You can also change sequences of characters:
+- Met behulp van `re.sub` kun je elk teken in de tekenreeks wijzigen. Als je bijvoorbeeld de `r` letters wijzigt in `i` dan ziet dit er als volgt uit:
 
 ```python
-new_title = re.sub('rr', 'pp', title)
+nieuwe_titel = re.sub('r', 'i', titel)
+print(nieuwe_titel)
 ```
+- Dit geeft ons `'Haiiy Pottei'`.
 
-- Printing `new_title` will now give you `'Happy Potter'`.
-
-- Of course, you can also substitute whole words.
+- Je kunt ook reeksen tekens wijzigen:
 
 ```python
-new_title = re.sub('Potter', 'Styles', title)
+nieuwe_titel = re.sub('rr', 'pp', titel)
 ```
 
-- You can also stop the substitution after a set number of replacements. So to only replace the first match, you can do this:
+- Als je `nieuwe_titel` afdrukt, krijg je nu `'Happy Potter'`.
+
+- Je kunt natuurlijk ook hele woorden vervangen.
 
 ```python
-new_title = re.sub('r', 'i', title, 1)
+nieuwe_titel = re.sub('Potter', 'Styles', titel)
 ```
 
-- This will make the `new_title` variable contain `'Hairy Potter'`.
+- Je kunt de vervanging ook stoppen na een bepaald aantal vervangingen. Dus om alleen de eerste overeenkomst te vervangen, kun je dit doen:
+
+```python
+nieuwe_titel = re.sub('r', 'i', titel, 1)
+```
+
+- Hierdoor bevat de variabele `nieuwe_titel ` `'Hairy Potter'`.
